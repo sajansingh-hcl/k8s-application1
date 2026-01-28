@@ -15,7 +15,8 @@ spec:
     spec:
       containers:
       #- image: quay.io/argoprojlabs/argocd-e2e-container:0.2
-      - image: quay.io/projectquay/quay:latest
+      #- image: quay.io/projectquay/quay:latest
+      -image: quay.io/kubernetes-ingress-controller/nginx-ingress-controller:latest
         name: guestbook-ui
         ports:
         - containerPort: 80
